@@ -1,0 +1,49 @@
+package com.douglas.convesor.program;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+import com.douglas.convesor.conversors.CentimeterConverter;
+import com.douglas.convesor.conversors.CubicCentimeterConverter;
+import com.douglas.convesor.conversors.DecameterConverter;
+import com.douglas.convesor.conversors.DecimeterConverter;
+import com.douglas.convesor.conversors.HectometreConverter;
+import com.douglas.convesor.conversors.InchConverter;
+import com.douglas.convesor.conversors.KilometreConverter;
+import com.douglas.convesor.enums.MeasureUnits;
+
+public class ConversorApplication extends JFrame implements ActionListener {
+
+	private static final long serialVersionUID = 1L;
+	private static Conversor conversor;
+
+	private JFrame frame;
+	
+	public ConversorApplication() {
+		conversor = new Conversor();
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		new ConversorApplication();
+		
+		double value = 1000;
+		MeasureUnits actualUnit = MeasureUnits.CENTIMETER;
+		MeasureUnits targetUnit = MeasureUnits.METRE;
+		
+		
+		conversor.getConvertiblesUnits(actualUnit).forEach(System.out::println);;
+		
+		conversor.convert(value, actualUnit, targetUnit);
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+	
+}

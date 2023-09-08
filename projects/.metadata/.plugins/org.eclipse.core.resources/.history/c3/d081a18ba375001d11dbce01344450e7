@@ -1,0 +1,32 @@
+package com.douglas.convesor.program;
+
+import com.douglas.convesor.conversors.CentimeterConverter;
+import com.douglas.convesor.conversors.CubicCentimeterConverter;
+import com.douglas.convesor.conversors.DecameterConverter;
+import com.douglas.convesor.conversors.DecimeterConverter;
+import com.douglas.convesor.conversors.HectometreConverter;
+import com.douglas.convesor.conversors.InchConverter;
+import com.douglas.convesor.conversors.KilometreConverter;
+
+public class Conversor {
+
+	private static CentimeterConverter centimeter;
+	private static CubicCentimeterConverter cubicCentimeter;
+	private static DecameterConverter decameter;
+	private static DecimeterConverter decimeter;
+	private static HectometreConverter hectometre;
+	private static InchConverter inch;
+	private static KilometreConverter kilometre;
+	
+	public Conversor() {
+		centimeter = new CentimeterConverter();
+		cubicCentimeter = new CubicCentimeterConverter();
+		decameter = new DecameterConverter();
+		decimeter = new DecimeterConverter();
+		hectometre = new HectometreConverter();
+		inch = new InchConverter();
+		kilometre = new KilometreConverter();
+	}
+
+	
+}

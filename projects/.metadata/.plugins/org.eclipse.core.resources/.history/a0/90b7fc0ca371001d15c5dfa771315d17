@@ -1,0 +1,12 @@
+package com.douglas.convesor.program;
+
+import javax.swing.JDialog;
+
+public class HelpWindow extends JDialog {
+
+	public HelpWindow() {
+		
+	}
+	
+	
+}

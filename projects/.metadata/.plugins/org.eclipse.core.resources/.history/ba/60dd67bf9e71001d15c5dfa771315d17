@@ -1,0 +1,15 @@
+package com.douglas.convesor.conversors.interfaces;
+
+import java.math.BigDecimal;
+
+public abstract class Convertible {
+	
+	private double CONSTRAINT_TO_BASIC;
+	
+	BigDecimal toBasicUnit(double value) {
+		return BigDecimal.valueOf(value * CONSTRAINT );
+	}
+	
+	BigDecimal fromBasicUnit(BigDecimal valueInBasicUnit);
+
+}

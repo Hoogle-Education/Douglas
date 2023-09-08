@@ -1,0 +1,14 @@
+package com.douglas.convesor.conversors.interfaces;
+
+import com.douglas.convesor.conversors.entities.Unit;
+import com.douglas.convesor.exception.NotImplementedException;
+
+public interface Convertible {
+	
+	double toBasicUnit(double value);
+	
+	double fromBasicUnit(double valueInBasicUnit);
+		
+	
+
+}

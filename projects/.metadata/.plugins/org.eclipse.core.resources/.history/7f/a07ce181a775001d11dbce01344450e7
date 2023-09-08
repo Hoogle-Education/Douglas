@@ -1,0 +1,14 @@
+package com.douglas.convesor.program;
+
+import java.awt.Canvas;
+
+public class ImagePainter extends Canvas {
+
+
+	private String imgFilename;
+	
+	public ImagePainter(String imgFilename) {
+		this.imgFilename = imgFilename;
+	}
+	
+}

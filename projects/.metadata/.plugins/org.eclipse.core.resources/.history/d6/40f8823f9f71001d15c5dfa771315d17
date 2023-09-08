@@ -1,0 +1,17 @@
+package com.douglas.convesor.conversors;
+
+import java.math.BigDecimal;
+
+import com.douglas.convesor.conversors.interfaces.Convertible;
+
+public class CentimeterConverter extends Convertible {
+
+	public CentimeterConverter() {
+		CONSTRAINT_TO_BASIC = 0.01;
+	}
+	
+	
+	
+	
+
+}

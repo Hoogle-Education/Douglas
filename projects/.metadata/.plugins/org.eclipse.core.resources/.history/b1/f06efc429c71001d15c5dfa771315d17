@@ -1,0 +1,9 @@
+package com.douglas.convesor.conversors;
+
+public abstract class AbstractConverter {
+	
+	public abstract convert() {
+		
+	}
+
+}

@@ -1,0 +1,90 @@
+package com.douglas.convesor.program;
+
+import java.util.List;
+
+import com.douglas.convesor.conversors.CentimeterConverter;
+import com.douglas.convesor.conversors.CubicCentimeterConverter;
+import com.douglas.convesor.conversors.DecameterConverter;
+import com.douglas.convesor.conversors.DecimeterConverter;
+import com.douglas.convesor.conversors.HectometreConverter;
+import com.douglas.convesor.conversors.InchConverter;
+import com.douglas.convesor.conversors.KilometreConverter;
+import com.douglas.convesor.conversors.LitreConverter;
+import com.douglas.convesor.conversors.MetreConverter;
+import com.douglas.convesor.conversors.MicrometreConverter;
+import com.douglas.convesor.conversors.MiliMeterConverter;
+import com.douglas.convesor.conversors.MililiLitreConverter;
+import com.douglas.convesor.conversors.NanometreConverter;
+import com.douglas.convesor.conversors.SoccerFieldConverter;
+import com.douglas.convesor.conversors.SquareMetreConverter;
+import com.douglas.convesor.conversors.USLiquidGallonConverter;
+import com.douglas.convesor.conversors.YardConverter;
+import com.douglas.convesor.enums.MeasureUnits;
+
+public class Conversor {
+
+	private static CentimeterConverter centimeter;
+	private static CubicCentimeterConverter cubicCentimeter;
+	private static DecameterConverter decameter;
+	private static DecimeterConverter decimeter;
+	private static HectometreConverter hectometre;
+	private static InchConverter inch;
+	private static KilometreConverter kilometre;
+	private static LitreConverter litre;
+	private static MetreConverter metre;
+	private static MicrometreConverter micrometre;
+	private static MililiLitreConverter mililitre;
+	private static MiliMeterConverter milimeter;
+	private static NanometreConverter nanometre;
+	private static SoccerFieldConverter soccerField;
+	private static SquareMetreConverter squareMetre;
+	private static USLiquidGallonConverter usLiquidGallon;
+	private static YardConverter yard;
+	
+	
+	private List<MeasureUnits> distances = List.of(MeasureUnits.CENTIMETER,
+			MeasureUnits.DECAMETER, MeasureUnits.DECIMETER, MeasureUnits.HECTOMETRE,
+			MeasureUnits.INCH, MeasureUnits.KILOMETRE, MeasureUnits.METRE,
+			MeasureUnits.MICROMETRE, MeasureUnits.MILILITRE, MeasureUnits.NONOMETRE);
+	
+	private List<MeasureUnits> areas = List.of(MeasureUnits.SOCCER_FIELD,
+			MeasureUnits.SQUARE_METER, MeasureUnits.YARD);
+	
+	private List<MeasureUnits> volumes = List.of(MeasureUnits.CUBIC_CENTIMETER,
+			MeasureUnits.LITRE, MeasureUnits.MILILITRE, MeasureUnits.US_LIQUID_GALOON);
+	
+	public Conversor() {
+		centimeter = new CentimeterConverter();
+		cubicCentimeter = new CubicCentimeterConverter();
+		decameter = new DecameterConverter();
+		decimeter = new DecimeterConverter();
+		hectometre = new HectometreConverter();
+		inch = new InchConverter();
+		kilometre = new KilometreConverter();
+		litre = new LitreConverter();
+		metre = new MetreConverter();
+		micrometre = new MicrometreConverter();
+		mililitre = new MililiLitreConverter();
+		milimeter = new MiliMeterConverter();
+		nanometre = new NanometreConverter();
+		soccerField = new SoccerFieldConverter();
+		squareMetre = new SquareMetreConverter();
+		usLiquidGallon = new USLiquidGallonConverter();
+		yard = new YardConverter();
+	}
+	
+	public List<MeasureUnits> getConvertiblesUnits (MeasureUnits unit) {
+		if(distances.contains(unit)) return distances;
+		
+		if(areas.contains(unit)) return areas;
+		
+		return volumes;
+	}
+
+	public double convert(double value, MeasureUnits unit, MeasureUnits target) {
+		
+		
+		
+		return -1;
+	}
+}

@@ -1,0 +1,17 @@
+package com.douglas.convesor.program;
+
+import com.douglas.convesor.conversors.CentimeterConverter;
+
+public class ConversorApplication {
+
+	private static CentimeterConverter cmCvt;
+	
+	public static void main(String[] args) {
+		
+		double value = 1000;
+		
+		
+		
+	}
+	
+}

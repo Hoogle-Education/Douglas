@@ -1,0 +1,20 @@
+package com.douglas.convesor.conversors;
+
+import java.math.BigDecimal;
+
+import com.douglas.convesor.conversors.interfaces.Convertible;
+
+public class CentimeterConverter extends Convertible {
+
+	
+	
+	public BigDecimal toBasicUnit(double value) {
+		
+	}
+
+	public double fromBasicUnit(BigDecimal value) {
+		
+	}
+	
+
+}

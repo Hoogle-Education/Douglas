@@ -1,0 +1,5 @@
+package com.douglas.convesor.exception;
+
+public class NotImplementedException {
+
+}

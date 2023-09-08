@@ -1,0 +1,23 @@
+package com.douglas.convesor.program;
+
+import java.awt.event.ActionListener;
+
+import javax.swing.JDialog;
+
+public class HelpWindow extends JDialog implements ActionListener {
+
+	public HelpWindow() {
+		
+	}
+	
+	public void open() {
+		
+		
+	}
+	
+	public void close() {
+		
+		
+	}
+	
+}

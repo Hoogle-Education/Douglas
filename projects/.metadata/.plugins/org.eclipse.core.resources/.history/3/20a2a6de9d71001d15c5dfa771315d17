@@ -1,0 +1,9 @@
+package com.douglas.convesor.conversors.interfaces;
+
+public abstract class Convertible {
+	
+	public abstract static double toBasicUnit();
+	
+	static double fromBasicUnit();
+
+}

@@ -1,0 +1,11 @@
+package com.douglas.convesor.conversors.interfaces;
+
+import java.math.BigDecimal;
+
+public interface Convertible {
+	
+	BigDecimal toBasicUnit(double value);
+	
+	BigDecimal fromBasicUnit(BigDecimal valueInBasicUnit);
+
+}

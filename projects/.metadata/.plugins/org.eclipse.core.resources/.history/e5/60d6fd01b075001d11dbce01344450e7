@@ -1,0 +1,7 @@
+package com.douglas.convesor.conversors;
+
+import com.douglas.convesor.conversors.interfaces.Convertible;
+
+public class MicrometreConverter extends Convertible{
+
+}
